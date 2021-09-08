@@ -1,0 +1,61 @@
+:root {
+  --black: #222831;
+  --gray: #393E46;
+  --dark-yellow: #E3B342;
+  --yellow: #FFD369;
+  --light-yellow: #FFDE8D;
+  --white: #EEEEEE;
+  --dark-blue: #2D768E;
+  --blue: #45899F;
+  --light-blue: #6EACC1;
+  --animation-duration: .3s;
+}
+
+.gameBoard {
+  animation: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: ease-out;
+}
+
+.boardRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.square {
+  height: 2em;
+  width: 2em;
+  border: 1px solid var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgba(256, 256, 256, 0);
+  color: var(--yellow);
+  padding: 0;
+  line-height: 1em;
+}
+
+.square.O {
+  color: var(--blue);
+}
+
+.square:hover {
+  background: rgba(256, 256, 256, .1);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

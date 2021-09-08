@@ -1,0 +1,78 @@
+:root {
+  --black: #222831;
+  --gray: #393E46;
+  --dark-yellow: #E3B342;
+  --yellow: #FFD369;
+  --light-yellow: #FFDE8D;
+  --white: #EEEEEE;
+  --dark-blue: #2D768E;
+  --blue: #45899F;
+  --light-blue: #6EACC1;
+  --animation-duration: .3s;
+}
+
+.numberSelector {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 2px solid var(--blue);
+  padding: 8px;
+  width: 234px;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+
+.numberSelector h4 {
+  margin: 0;
+  color: var(--blue);
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.numberSelectorBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.left {
+  height: 120px;
+  width: 70%;
+  padding: 12px;
+  font-size: 64px;
+  box-sizing: border-box;
+  color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.right {
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right button {
+  margin: 8px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  font-size: 32px;
+  width: 48px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.right button:hover {
+  background: rgba(256, 256, 256, .1);
+}
